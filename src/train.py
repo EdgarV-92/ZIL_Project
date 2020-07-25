@@ -82,8 +82,8 @@ def train_model(model, train_data, val_data, lr=0.001, batch_size= 16, froze_lay
 
 if __name__ == "__main__":
 
-    train_data = pd.read_csv("../data/images/animal_train_data.csv")
-    val_data = pd.read_csv("../data/images/animal_val_data.csv")
+    train_data = pd.read_csv("../data/dataframes/animal_train_data.csv")
+    val_data = pd.read_csv("../data/dataframes/animal_val_data.csv")
     model = get_vgg16()
     train_model(model,train_data,val_data)
 
