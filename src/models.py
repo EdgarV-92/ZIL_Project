@@ -27,5 +27,5 @@ def get_vgg16(input_shape=(224, 224, 3), froze_layer_index=20):
 
     return model
 
-model = get_vgg16()
-print(model.summary())
+# model = get_vgg16()
+# print(model.summary())
