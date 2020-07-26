@@ -77,6 +77,8 @@ def train_model(model, train_data, val_data, lr=0.001, batch_size= 16, froze_lay
         steps_per_epoch=10,
         callbacks=callbacks
     )
+    model.save_weights('../weights/my_weights')
+
     return history
 
 
@@ -86,5 +88,6 @@ if __name__ == "__main__":
     val_data = pd.read_csv("../data/images/animal_val_data.csv")
     model = get_vgg16()
     train_model(model,train_data,val_data)
+
 
 
